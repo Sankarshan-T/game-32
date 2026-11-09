@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://fiay0bhgdx3y"]
+
+[ext_resource type="Script" uid="uid://b1u0kpm08fuds" path="res://scripts/transition_door_3d.gd" id="1_vxfqo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7xenw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vxfqo"]
+albedo_color = Color(0.8138277, 0.8127424, 3.85046e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vxfqo"]
+
+[node name="TransitionDoor3D" type="Area3D" unique_id=604576818]
+script = ExtResource("1_vxfqo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1842417209]
+shape = SubResource("BoxShape3D_7xenw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1733396534]
+material_override = SubResource("StandardMaterial3D_vxfqo")
+mesh = SubResource("BoxMesh_vxfqo")

@@ -15,3 +15,10 @@ texture = ExtResource("1_byvnx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1501049535]
 shape = SubResource("CircleShape2D_kjwfp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1223204781]
+zoom = Vector2(0.6, 0.6)
+limit_left = -100
+limit_top = -10000
+limit_bottom = 900
+position_smoothing_enabled = true

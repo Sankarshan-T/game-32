@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crbjvgr4vyfgf"]
+
+[ext_resource type="Texture2D" uid="uid://e77jt74me6od" path="res://assets/Player2d.png" id="1_ccqwg"]
+[ext_resource type="Script" uid="uid://bou1xh04kxpui" path="res://scripts/transition_door_2d.gd" id="1_lln78"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lln78"]
+size = Vector2(160, 160)
+
+[node name="TransitionDoor2D" type="Area2D" unique_id=284163760]
+script = ExtResource("1_lln78")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=151412724]
+shape = SubResource("RectangleShape2D_lln78")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=30440957]
+modulate = Color(0.9577188, 0.94029063, 0, 1)
+texture = ExtResource("1_ccqwg")
