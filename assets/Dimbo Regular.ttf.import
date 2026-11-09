@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://72qa2f44mwag"
-path="res://.godot/imported/Matcha World.ttf-e64e66a0fafa41f28f643f2d34dcda56.fontdata"
+uid="uid://b51eh3hb75gqv"
+path="res://.godot/imported/Dimbo Regular.ttf-91d740d13b13df27adfbe3c97950d9ea.fontdata"
 
 [deps]
 
-source_file="res://assets/Matcha World.ttf"
-dest_files=["res://.godot/imported/Matcha World.ttf-e64e66a0fafa41f28f643f2d34dcda56.fontdata"]
+source_file="res://assets/Dimbo Regular.ttf"
+dest_files=["res://.godot/imported/Dimbo Regular.ttf-91d740d13b13df27adfbe3c97950d9ea.fontdata"]
 
 [params]
 

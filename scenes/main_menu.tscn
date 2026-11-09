@@ -2,9 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://wf26sv4nbe68" path="res://assets/skybox-day.png" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://dk2unh4o1ac7t" path="res://assets/GameUi/Window/Cartoon RPG UI_Window - Popup.png" id="1_l6cm7"]
-[ext_resource type="FontFile" uid="uid://72qa2f44mwag" path="res://assets/Matcha World.ttf" id="3_bqqt6"]
+[ext_resource type="Script" uid="uid://c4da0hrpei622" path="res://scripts/main_menu.gd" id="1_tbmy8"]
+[ext_resource type="FontFile" uid="uid://b51eh3hb75gqv" path="res://assets/Dimbo Regular.ttf" id="3_oa1go"]
 [ext_resource type="Texture2D" uid="uid://cac34blhv2rex" path="res://assets/GameUi/Buttons/Text/Cartoon RPG UI_Button Text - Green.png" id="4_8ln24"]
 [ext_resource type="Texture2D" uid="uid://bjjvfu4e4a0lk" path="res://assets/GameUi/Buttons/Normal/Buttons_Button Normal - Settings.png" id="5_8ln24"]
+[ext_resource type="Texture2D" uid="uid://qlra531fc5nr" path="res://assets/GameUi/Buttons/Text/Cartoon RPG UI_Button Text - Green - Hover.png" id="5_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://r6fmn4y5nox5" path="res://assets/GameUi/Buttons/Normal/Buttons_Button Normal - Settings - Hover.png" id="7_oa1go"]
 
 [node name="Main Menu" type="Control" unique_id=95806477]
 layout_mode = 3
@@ -13,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tbmy8")
 
 [node name="SkyboxDay" type="Sprite2D" parent="." unique_id=1464548237]
 position = Vector2(647.99994, 323.99997)
@@ -31,66 +35,82 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -443.5
-offset_top = 103.0
+offset_top = 66.0
 offset_right = 443.5
-offset_bottom = 239.0
+offset_bottom = 304.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.27450982, 0.23529412, 0.19607843, 1)
-theme_override_colors/font_outline_color = Color(0.25882354, 0.7019608, 0.28627452, 1)
+theme_override_colors/font_color = Color(1, 0.83000004, 0.14999998, 1)
+theme_override_colors/font_outline_color = Color(0.21960784, 0.1764706, 0.13725491, 1)
 theme_override_constants/outline_size = 45
 theme_override_constants/shadow_outline_size = 2
-theme_override_fonts/font = ExtResource("3_bqqt6")
-theme_override_font_sizes/font_size = 120
-text = "Cross-Plane"
+theme_override_fonts/font = ExtResource("3_oa1go")
+theme_override_font_sizes/font_size = 200
+text = "CROSS-PLANE"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Play" type="TextureButton" parent="." unique_id=281239132]
 layout_mode = 0
 offset_left = 192.0
-offset_top = 264.0
+offset_top = 312.0
 offset_right = 512.0
-offset_bottom = 424.0
+offset_bottom = 472.0
 scale = Vector2(0.75, 0.75)
 tooltip_text = "Play"
 texture_normal = ExtResource("4_8ln24")
+texture_hover = ExtResource("5_rtw2f")
 
 [node name="Label" type="Label" parent="Play" unique_id=1619544801]
 layout_mode = 1
 offset_right = 320.0
 offset_bottom = 160.0
+theme_override_colors/font_shadow_color = Color(0.22, 0.17794333, 0.13859999, 0.5294118)
 theme_override_colors/font_outline_color = Color(0.21960784, 0.1764706, 0.13725491, 1)
-theme_override_constants/outline_size = 32
-theme_override_fonts/font = ExtResource("3_bqqt6")
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 23
+theme_override_constants/shadow_outline_size = 20
+theme_override_fonts/font = ExtResource("3_oa1go")
 theme_override_font_sizes/font_size = 72
-text = "Play"
+text = "PLAY"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Controls" type="TextureButton" parent="." unique_id=1716135275]
 layout_mode = 0
 offset_left = 192.0
-offset_top = 392.0
+offset_top = 422.0
 offset_right = 512.0
-offset_bottom = 552.0
+offset_bottom = 582.0
 scale = Vector2(0.75, 0.75)
+tooltip_text = "Controls"
 texture_normal = ExtResource("4_8ln24")
+texture_hover = ExtResource("5_rtw2f")
 
 [node name="Label" type="Label" parent="Controls" unique_id=160127202]
 layout_mode = 1
 offset_right = 320.0
 offset_bottom = 160.0
+theme_override_colors/font_shadow_color = Color(0.21960784, 0.1764706, 0.13725491, 0.5294118)
 theme_override_colors/font_outline_color = Color(0.21960784, 0.1764706, 0.13725491, 1)
-theme_override_constants/outline_size = 32
-theme_override_fonts/font = ExtResource("3_bqqt6")
-theme_override_font_sizes/font_size = 45
-text = "Controls"
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 23
+theme_override_constants/shadow_outline_size = 20
+theme_override_fonts/font = ExtResource("3_oa1go")
+theme_override_font_sizes/font_size = 64
+text = "CONTROLS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Settings" type="TextureButton" parent="." unique_id=1057480816]
 layout_mode = 0
-offset_left = 984.0
-offset_top = 480.0
-offset_right = 1144.0
-offset_bottom = 640.0
+offset_left = 963.0
+offset_top = 465.0
+offset_right = 1123.0
+offset_bottom = 625.0
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("5_8ln24")
+texture_hover = ExtResource("7_oa1go")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
