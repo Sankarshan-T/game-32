@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Game32"
+run/main_scene="uid://brymt6ha74p6r"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
 [autoload]
@@ -19,7 +20,8 @@ SceneManager="*uid://dctax61uwbroq"
 
 [display]
 
-window/size/mode=2
+window/size/window_width_override=1920
+window/size/window_height_override=1080
 window/stretch/mode="canvas_items"
 window/vsync/vsync_mode=0
 
