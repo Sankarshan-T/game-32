@@ -17,6 +17,8 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 [autoload]
 
 SceneManager="*uid://dctax61uwbroq"
+GameState="*uid://bqfuftilthars"
+CollectibleHud="*uid://dqjn1knb5fd6o"
 
 [display]
 
