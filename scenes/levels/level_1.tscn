@@ -142,6 +142,7 @@ tile_set = SubResource("TileSet_x42e6")
 position = Vector2(3133, 343)
 scale = Vector2(0.2, 0.2)
 target_scene = "uid://cwaihc3sfavwk"
+completion_flag = "level-1-done"
 
 [node name="Coins" type="Node" parent="." unique_id=822824970]
 
